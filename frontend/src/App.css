@@ -1,0 +1,265 @@
+body{
+  margin:0;
+  background:#141414;
+  color:white;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+
+.nav{
+position:fixed;
+top:0;
+width:100%;
+background:black;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+z-index:1000;
+}
+
+.nav h2{
+  color:#e50914;
+}
+
+.nav a{
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.nav button{
+  background:#e50914;
+  border:none;
+  padding:8px 15px;
+  color:white;
+  cursor:pointer;
+}
+
+/* HERO BANNER */
+
+.banner{
+  height:60vh;
+  background:url("https://assets.nflxext.com/ffe/siteui/vlv3/9c8b2b5b-hero.jpg") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  padding-left:50px;
+}
+
+.banner h1{
+  font-size:60px;
+}
+
+/* SEARCH */
+
+.search{
+  padding:20px 50px;
+}
+
+.search input{
+  padding:10px;
+  width:300px;
+  border:none;
+  outline:none;
+}
+
+.search button{
+  padding:10px 20px;
+  background:#e50914;
+  border:none;
+  color:white;
+  cursor:pointer;
+}
+
+/* MOVIE ROW */
+
+.row{
+  margin-left:50px;
+}
+
+.row h2{
+  margin-top:30px;
+}
+
+.row-posters{
+  display:flex;
+  overflow-x:auto;
+  gap:15px;
+  padding:20px 0;
+}
+
+.row-posters::-webkit-scrollbar{
+  display:none;
+}
+
+/* MOVIE CARD */
+
+.card{
+  min-width:150px;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+.card img{
+  width:100%;
+  border-radius:5px;
+}
+
+.card:hover{
+  transform:scale(1.1);
+
+
+}
+
+/* AUTH */
+
+.auth{
+  background:black;
+  width:350px;
+  margin:120px auto;
+  padding:40px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.auth input{
+  padding:10px;
+}
+
+.auth button{
+  background:#e50914;
+
+.detail-page{
+background:#111;
+min-height:100vh;
+color:white;
+padding-top:100px;
+}
+
+.detail-container{
+display:flex;
+align-items:flex-start;
+gap:50px;
+padding:60px;
+max-width:1200px;
+margin:auto;
+}
+
+.detail-poster{
+width:320px;
+border-radius:12px;
+box-shadow:0 0 25px rgba(0,0,0,0.8);
+flex-shrink:0;
+}
+
+.detail-info{
+flex:1;
+max-width:700px;
+}
+
+.detail-info h1{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.meta{
+color:#aaa;
+margin-bottom:25px;
+font-size:16px;
+}
+
+.plot{
+line-height:1.8;
+font-size:17px;
+}
+
+.trailer-btn{
+margin-top:25px;
+background:#e50914;
+border:none;
+padding:14px 30px;
+font-size:17px;
+color:white;
+cursor:pointer;
+border-radius:6px;
+}
+
+.mylist-page{
+background:#111;
+min-height:100vh;
+color:white;
+padding-top:120px;
+padding-left:40px;
+padding-right:40px;
+}
+
+.my-section{
+margin-bottom:40px;
+}
+
+.mylist-grid{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+gap:25px;
+}
+
+.mylist-card{
+background:#181818;
+border-radius:8px;
+overflow:hidden;
+transition:0.3s;
+cursor:pointer;
+}
+
+.mylist-card img{
+width:100%;
+height:260px;
+object-fit:cover;
+}
+
+.mylist-card:hover{
+transform:scale(1.07);
+}
+
+.mylist-info{
+padding:10px;
+}
+
+.mylist-info h4{
+margin:0;
+font-size:14px;
+}
+
+.mylist-info select{
+margin-top:10px;
+width:100%;
+padding:5px;
+background:#333;
+color:white;
+border:none;
+}
+
+.mylist-info button{
+margin-top:10px;
+background:#e50914;
+border:none;
+padding:6px;
+width:100%;
+color:white;
+cursor:pointer;
+border-radius:4px;
+}
+
+.empty{
+display:flex;
+justify-content:center;
+align-items:center;
+height:60vh;
+font-size:22px;
+color:#aaa;
+}
+
+
+}
