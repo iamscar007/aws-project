@@ -10,7 +10,7 @@ const [showTrailer,setShowTrailer]=useState(false)
 const addToList = async () => {
 try{
 await axios.post(
-"http://localhost:5000/user/add",
+"http://3.110.195.134:5000/user/add",
 { movie },
 {
 headers:{
@@ -30,7 +30,7 @@ window.open(`https://www.youtube.com/results?search_query=${query}`)
 }
 
 useEffect(()=>{
-axios.get(`http://localhost:5000/movies/movie/${id}`)
+axios.get(`http://3.110.195.134:5000/movies/movie/${id}`)
 .then(res=>setMovie(res.data))
 },[id])
 

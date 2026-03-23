@@ -9,7 +9,7 @@ const [password,setPassword]=useState("")
 const nav = useNavigate()
 
 const login = async()=>{
-const res = await axios.post("http://localhost:5000/auth/login",{email,password})
+const res = await axios.post("http://3.110.195.134:5000/auth/login",{email,password})
 localStorage.setItem("token",res.data.token)
 nav("/")
 }

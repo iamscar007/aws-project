@@ -10,7 +10,7 @@ const [password,setPassword]=useState("")
 const nav = useNavigate()
 
 const signup = async()=>{
-await axios.post("http://localhost:5000/auth/signup",{username,email,password})
+await axios.post("http://3.110.195.134:5000/auth/signup",{username,email,password})
 nav("/login")
 }
 
