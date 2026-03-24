@@ -14,7 +14,7 @@ loadList()
 const loadList = async ()=>{
 try{
 const res = await axios.get(
-"http://3.110.195.134:5000/user/mylist",
+"http://localhost:5000/user/mylist",
 {
 headers:{ token: localStorage.getItem("token") }
 }
@@ -28,7 +28,7 @@ console.log(err)
 const removeMovie = async (item)=>{
 try{
 await axios.post(
-"http://3.110.195.134:5000/user/remove",
+"http://localhost:5000/user/remove",
 {
 movie:{
 imdbID: item.movie?.imdbID
@@ -47,7 +47,7 @@ console.log(err)
 const updateStatus = async (item,status)=>{
 try{
 await axios.post(
-"http://3.110.195.134:5000/user/status",
+"http://localhost:5000/user/status",
 {
 movie:{
 imdbID: item.movie?.imdbID

@@ -18,24 +18,24 @@ loadAllMovies()
 },[])
 
 const loadAllMovies = async()=>{
-const t = await axios.get("http://3.110.195.134:5000/movies/search/avengers")
+const t = await axios.get("http://localhost:5000/movies/search/avengers")
 setTrending(t.data)
 
-const s = await axios.get("http://3.110.195.134:5000/movies/search/star")
+const s = await axios.get("http://localhost:5000/movies/search/star")
 setScifi(s.data)
 
-const h = await axios.get("http://3.110.195.134:5000/movies/search/conjuring")
+const h = await axios.get("http://localhost:5000/movies/search/conjuring")
 setHorror(h.data)
 
-const r = await axios.get("http://3.110.195.134:5000/movies/search/love")
+const r = await axios.get("http://localhost:5000/movies/search/love")
 setRomance(r.data)
 
-const c = await axios.get("http://3.110.195.134:5000/movies/search/funny")
+const c = await axios.get("http://localhost:5000/movies/search/funny")
 setComedy(c.data)
 }
 
 const search = async()=>{
-const res = await axios.get(`http://3.110.195.134:5000/movies/search/${name}`)
+const res = await axios.get(`http://localhost:5000/movies/search/${name}`)
 setSearchMovies(res.data)
 }
 

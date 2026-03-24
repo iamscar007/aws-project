@@ -16,7 +16,7 @@ const loadMovies = async ()=>{
 try{
 
 const res = await axios.get(
-"http://3.110.195.134:5000/user/recommend-genre",
+"http://localhost:5000/user/recommend-genre",
 {
 headers:{ token: localStorage.getItem("token") }
 }
